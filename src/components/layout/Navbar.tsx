@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ShoppingCart, Menu, X, Phone, Instagram, Facebook } from 'lucide-react';
 import { useCartStore } from '../../store/cartStore';
-import BrandIdentity from './BrandIdentity';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,8 +23,12 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="max-w-[220px] sm:max-w-none">
-            <BrandIdentity size="sm" showTagline={false} />
+          <Link to="/" className="flex items-center">
+            <img
+              src="/logo_super.png"
+              alt="Sri Udupi Krishna Crackers"
+              className="h-16 w-auto object-contain sm:h-20"
+            />
           </Link>
 
           {/* Desktop Navigation */}

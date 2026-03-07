@@ -1,8 +1,8 @@
 import { create } from 'zustand';
-import { CartItem, CartState } from '../types';
+import { CartState, Product } from '../types';
 
 interface CartStore extends CartState {
-  addItem: (product: CartItem) => void;
+  addItem: (product: Product) => void;
   removeItem: (productId: string) => void;
   updateQuantity: (productId: string, quantity: number) => void;
   clearCart: () => void;

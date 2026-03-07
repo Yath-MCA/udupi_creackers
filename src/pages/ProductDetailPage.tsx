@@ -177,7 +177,7 @@ const ProductDetailPage: React.FC = () => {
               </span>
               {discount > 0 && (
                 <span className="bg-diwali-red text-white px-2 py-1 rounded-md text-sm font-bold">
-                  Save ₹{product.price - product.discountPrice}
+                  Save ₹{product.price - (product.discountPrice ?? product.price)}
                 </span>
               )}
             </div>

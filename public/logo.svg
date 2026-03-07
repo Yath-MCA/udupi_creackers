@@ -1,0 +1,170 @@
+<svg width="400" height="500" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="500" fill="#faf8ff"/>
+  
+  <!-- Definitions for gradients and effects -->
+  <defs>
+    <!-- Blue-violet gradient for outline -->
+    <linearGradient id="outlineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6B46C1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4C1D95;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Golden gradient for jewelry -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFA500;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFD700;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Peacock feather gradient -->
+    <linearGradient id="peacockGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E40AF;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E40AF;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Fire spark gradient -->
+    <radialGradient id="fireGradient">
+      <stop offset="0%" style="stop-color:#FFA500;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FF6347;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFD700;stop-opacity:0.8" />
+    </radialGradient>
+    
+    <!-- Drop shadow filter -->
+    <filter id="dropShadow">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Large Peacock Feather (extending from top right) -->
+  <g transform="translate(280, 80) rotate(25)">
+    <!-- Feather stem -->
+    <path d="M0,0 Q-5,40 -3,80" stroke="url(#peacockGradient)" stroke-width="3" fill="none"/>
+    
+    <!-- Feather eye (central part) -->
+    <ellipse cx="-3" cy="45" rx="8" ry="15" fill="url(#peacockGradient)" opacity="0.9"/>
+    <ellipse cx="-3" cy="45" rx="5" ry="10" fill="#1E40AF" opacity="0.8"/>
+    <circle cx="-3" cy="45" r="3" fill="#FFD700" opacity="0.9"/>
+    
+    <!-- Feather barbs -->
+    <path d="M-3,35 Q-15,30 -20,25" stroke="url(#peacockGradient)" stroke-width="2" fill="none" opacity="0.8"/>
+    <path d="M-3,40 Q-18,38 -25,35" stroke="url(#peacockGradient)" stroke-width="2" fill="none" opacity="0.8"/>
+    <path d="M-3,45 Q-20,45 -28,43" stroke="url(#peacockGradient)" stroke-width="2" fill="none" opacity="0.8"/>
+    <path d="M-3,50 Q-18,52 -25,55" stroke="url(#peacockGradient)" stroke-width="2" fill="none" opacity="0.8"/>
+    <path d="M-3,55 Q-15,60 -20,65" stroke="url(#peacockGradient)" stroke-width="2" fill="none" opacity="0.8"/>
+  </g>
+  
+  <!-- Rounded Hexagon Badge -->
+  <g transform="translate(200, 180)">
+    <!-- Hexagon path -->
+    <path d="M-60,0 L-30,-52 L30,-52 L60,0 L30,52 L-30,52 Z" 
+          fill="white" 
+          stroke="url(#outlineGradient)" 
+          stroke-width="4" 
+          filter="url(#dropShadow)"/>
+    
+    <!-- Baby Lord Krishna Illustration -->
+    <g transform="scale(0.8)">
+      <!-- Head -->
+      <circle cx="0" cy="-10" r="25" fill="#4A90E2"/>
+      
+      <!-- Face features -->
+      <!-- Eyes (large and expressive) -->
+      <ellipse cx="-8" cy="-12" rx="6" ry="8" fill="white"/>
+      <ellipse cx="8" cy="-12" rx="6" ry="8" fill="white"/>
+      <circle cx="-8" cy="-12" r="4" fill="#1E293B"/>
+      <circle cx="8" cy="-12" r="4" fill="#1E293B"/>
+      <circle cx="-7" cy="-13" r="1.5" fill="white"/>
+      <circle cx="9" cy="-13" r="1.5" fill="white"/>
+      
+      <!-- Nose -->
+      <path d="M0,-8 L-2,-4 L2,-4 Z" fill="#2C5282"/>
+      
+      <!-- Mouth (smile) -->
+      <path d="M-8,-2 Q0,3 8,-2" stroke="#2C5282" stroke-width="2" fill="none" stroke-linecap="round"/>
+      
+      <!-- Red Tilak -->
+      <path d="M0,-25 L-8,-35 L0,-30 L8,-35 Z" fill="#DC143C"/>
+      
+      <!-- Peacock feather on head -->
+      <g transform="translate(15, -35) rotate(-15)">
+        <line x1="0" y1="0" x2="0" y2="-20" stroke="url(#peacockGradient)" stroke-width="2"/>
+        <ellipse cx="0" cy="-18" rx="4" ry="8" fill="url(#peacockGradient)"/>
+        <circle cx="0" cy="-18" r="2" fill="#FFD700"/>
+      </g>
+      
+      <!-- Golden Jewelry -->
+      <!-- Earring -->
+      <circle cx="-25" cy="-10" r="4" fill="url(#goldGradient)"/>
+      <circle cx="25" cy="-10" r="4" fill="url(#goldGradient)"/>
+      
+      <!-- Necklace -->
+      <path d="M-20,5 Q0,8 20,5" stroke="url(#goldGradient)" stroke-width="3" fill="none"/>
+      <circle cx="0" cy="7" r="3" fill="url(#goldGradient)"/>
+      
+      <!-- Body -->
+      <ellipse cx="0" cy="20" rx="20" ry="25" fill="#4A90E2"/>
+      
+      <!-- Fire spark in hand -->
+      <g transform="translate(15, 15)">
+        <!-- Hand holding spark -->
+        <circle cx="0" cy="0" r="4" fill="#FDBCB4"/>
+        <!-- Fire spark -->
+        <path d="M0,-8 Q-3,-12 -2,-16 Q0,-14 2,-16 Q3,-12 0,-8" 
+              fill="url(#fireGradient)" 
+              opacity="0.9">
+          <animate attributeName="opacity" values="0.9;0.6;0.9" dur="1.5s" repeatCount="indefinite"/>
+        </path>
+        <circle cx="0" cy="-12" r="2" fill="#FFD700" opacity="0.8">
+          <animate attributeName="r" values="2;2.5;2" dur="1s" repeatCount="indefinite"/>
+        </circle>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Golden Flute (diagonal below) -->
+  <g transform="translate(200, 280) rotate(-30)">
+    <rect x="-40" y="-3" width="80" height="6" fill="url(#goldGradient)" rx="3"/>
+    <!-- Flute holes -->
+    <circle cx="-20" cy="0" r="2" fill="#4C1D95"/>
+    <circle cx="-10" cy="0" r="2" fill="#4C1D95"/>
+    <circle cx="0" cy="0" r="2" fill="#4C1D95"/>
+    <circle cx="10" cy="0" r="2" fill="#4C1D95"/>
+    <circle cx="20" cy="0" r="2" fill="#4C1D95"/>
+  </g>
+  
+  <!-- Brand Text -->
+  <!-- SRI UDUPI KRISHNA -->
+  <text x="200" y="350" font-family="Arial, sans-serif" font-size="28" font-weight="bold" 
+        text-anchor="middle" fill="#4C1D95">
+    SRI UDUPI KRISHNA
+  </text>
+  
+  <!-- CRACKERS -->
+  <text x="200" y="385" font-family="Arial, sans-serif" font-size="32" font-weight="bold" 
+        text-anchor="middle" fill="#10B981">
+    CRACKERS
+  </text>
+  
+  <!-- Tagline -->
+  <text x="200" y="420" font-family="Arial, sans-serif" font-size="14" font-style="italic"
+        text-anchor="middle" fill="#6B7280">
+    "The Divine Touch Behind Every Spark"
+  </text>
+  
+  <!-- Decorative elements -->
+  <g transform="translate(80, 360)">
+    <circle cx="0" cy="0" r="2" fill="#FFD700" opacity="0.6"/>
+    <circle cx="10" cy="5" r="1.5" fill="#FFA500" opacity="0.6"/>
+    <circle cx="5" cy="10" r="1" fill="#FF6347" opacity="0.6"/>
+  </g>
+  
+  <g transform="translate(320, 360)">
+    <circle cx="0" cy="0" r="2" fill="#FFD700" opacity="0.6"/>
+    <circle cx="-10" cy="5" r="1.5" fill="#FFA500" opacity="0.6"/>
+    <circle cx="-5" cy="10" r="1" fill="#FF6347" opacity="0.6"/>
+  </g>
+</svg>

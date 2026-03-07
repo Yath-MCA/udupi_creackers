@@ -1,0 +1,105 @@
+# -----------------------------
+
+# Dependencies
+
+# -----------------------------
+
+node_modules/
+.pnpm-store/
+.npm/
+.yarn/
+
+# -----------------------------
+
+# Build Output
+
+# -----------------------------
+
+dist/
+build/
+.vite/
+coverage/
+
+# -----------------------------
+
+# Logs
+
+# -----------------------------
+
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# -----------------------------
+
+# Environment Variables
+
+# -----------------------------
+
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Vite env
+
+.env.*.local
+
+# -----------------------------
+
+# Supabase
+
+# -----------------------------
+
+supabase/.branches
+supabase/.temp
+supabase/.cache
+supabase/.history
+supabase/config.local.toml
+
+# -----------------------------
+
+# OS Files
+
+# -----------------------------
+
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+
+# IDE / Editors
+
+# -----------------------------
+
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# -----------------------------
+
+# TypeScript
+
+# -----------------------------
+
+*.tsbuildinfo
+
+# -----------------------------
+
+# Misc
+
+# -----------------------------
+
+.cache/
+.tmp/
+temp/
+*.local
